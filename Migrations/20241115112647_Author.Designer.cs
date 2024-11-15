@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sava_Razvan_Cristian_Lab2.Data;
 
@@ -11,9 +12,11 @@ using Sava_Razvan_Cristian_Lab2.Data;
 namespace Sava_Razvan_Cristian_Lab2.Migrations
 {
     [DbContext(typeof(Sava_Razvan_Cristian_Lab2Context))]
-    partial class Sava_Razvan_Cristian_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20241115112647_Author")]
+    partial class Author
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
