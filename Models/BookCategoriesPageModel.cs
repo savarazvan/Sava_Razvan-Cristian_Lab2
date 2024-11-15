@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Sava_Razvan_Cristian_Lab2.Data;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Sava_Razvan_Cristian_Lab2.Data;
 namespace Sava_Razvan_Cristian_Lab2.Models
 {
-    public class PopulateAssignedCategoryData : PageModel
+    public class BookCategoriesPageModel : PageModel
     {
         public List<AssignedCategoryData> AssignedCategoryDataList;
         public void PopulateAssignedCategoryData(Sava_Razvan_Cristian_Lab2Context context,
